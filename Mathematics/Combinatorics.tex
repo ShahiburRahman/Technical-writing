@@ -1,0 +1,56 @@
+\chapter{Combinatorics}
+\section{Basic Principles}
+\subsection{Addition}
+\begin{theorem}
+    If there are $n_1$ ways to do the first task, $n_2$ ways to do the second task, 
+    $n_3$ ways to do the third task, and so on, then there are $n_1+n_2+n_3+\cdots$ ways
+    to do the tasks in succession.
+\end{theorem}
+This can be represented as follows:
+$$
+    \displaystyle
+    n\big(A \cup B\big) = n(A) + n(B) 
+$$
+provided that $A$ and $B$ are mutually exclusive i.e. $A\cap B = \varnothing  $.
+%some figure to demostrate addition principles%
+
+
+
+\subsection{Multiplication}
+\begin{theorem}
+    If there are $n_1$ ways to do the first task, $n_2$ ways to do the second task,
+    $n_3$ ways to do the third task, and so on, then there are $n_1\times n_2\times n_3\times\cdots$
+    ways to do the tasks in succession.
+\end{theorem}
+This can be represented as follows:
+$$
+    \displaystyle
+    n\big(A \cap B\big) = n(A) \times n(B)
+$$
+provided that $A$ and $B$ are independent
+%some visula examples to demostrate multiplication principles%
+
+\subsection{Addition or Multiplication ?}
+\textbf{Addition} is used when the tasks are mutually exclusive.\\
+When we can do a task either by following option 1 or option 2 and let's say
+we can do the task in $n_1$ ways following option 1 and $n_2$ ways following option 2\\
+then we can do the task in $n_1+n_2$ ways.\\
+\newline
+%example of addition principle%
+
+\newline
+Here you can observe that all the steps are independent. So we can use multiplication principle.\\
+\textbf{Multiplication} is used when the tasks are independent.
+When to do a task, we must follow two steps in order. Let's say we can do the first step in $n_1$ ways
+and the second step in $n_2$ ways. Then we can do the task in $n_1\times n_2$ ways.\\
+\newline
+\textbf{Example:} How many 3 digit numbers can be formed using the digits 1,2,3,4,5,6,7,8,9
+if repetition is allowed?\\
+\newline
+\textbf{Solution:} \\~~\\We can do this task in 3 steps.\\
+\textbf{Step 1:} Choose the first digit. We can do this in 9 ways.\\
+\textbf{Step 2:} Choose the second digit. We can do this in 9 ways.\\
+\textbf{Step 3:} Choose the third digit. We can do this in 9 ways.\\
+By multiplication principle, we can do the task in $9\times 9\times 9 = 9^3$ ways.\\ 
+\newline
+Here you can observe that all the steps are independent. So we can use multiplication principle.\\
